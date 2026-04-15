@@ -212,7 +212,7 @@ function generateStoreEmployees(store, seed) {
     if (daysEmployed > 180) {
       const noRaiseBias = rnd() < 0.3;
       if (!noRaiseBias) {
-        const daysAgo = range(30, Math.min(daysEmployed - 30, 730));
+        const daysAgo = range(30, Math.min(daysEmployed - 30, 730), rnd);
         const raiseDate = new Date('2026-04-15');
         raiseDate.setDate(raiseDate.getDate() - daysAgo);
         lastRaiseDate = raiseDate.toISOString().split('T')[0];
