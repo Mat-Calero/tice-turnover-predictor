@@ -1,0 +1,19 @@
+/* App-level overrides — Tailwind handles most styling */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+select {
+  outline: none;
+}
+
+/* Smooth scrollbar hiding for tab nav overflow */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
