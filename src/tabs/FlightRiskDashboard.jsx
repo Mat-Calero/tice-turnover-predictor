@@ -125,25 +125,25 @@ export default function FlightRiskDashboard() {
     <div className="space-y-6">
       {/* ── Summary Cards ────────────────────────────────── */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-        <div className={cardBase} style={{ background: '#1B2A4A', border: '1px solid #2a4a7a' }}>
-          <p className="text-xs uppercase tracking-wide" style={{ color: '#7fa3c8' }}>Total Employees</p>
-          <p className="text-3xl font-black text-white">{ALL_EMPLOYEES.length}</p>
-          <p className="text-xs" style={{ color: '#4a6fa5' }}>Across 22 locations</p>
+        <div className={cardBase} style={{ background: '#0d1e35', border: '1px solid #1e3a5f' }}>
+          <p style={{ fontSize: '10px', textTransform: 'uppercase', letterSpacing: '1px', color: '#4a6fa5', margin: 0 }}>Total Employees</p>
+          <p style={{ fontSize: '36px', fontWeight: 900, color: 'white', lineHeight: 1.1, margin: '4px 0 2px' }}>{ALL_EMPLOYEES.length}</p>
+          <p style={{ fontSize: '11px', color: '#4a6fa5', margin: 0 }}>Across 22 locations</p>
         </div>
-        <div className={cardBase} style={{ background: '#3a1020', border: '1px solid #7a1f3a' }}>
-          <p className="text-xs uppercase tracking-wide text-red-400">Critical Risk</p>
-          <p className="text-3xl font-black text-red-400">{critical.length}</p>
-          <p className="text-xs text-red-700">Score 75–100 · Immediate action</p>
+        <div className={cardBase} style={{ background: '#0d1e35', border: '1px solid rgba(239,68,68,0.3)' }}>
+          <p style={{ fontSize: '10px', textTransform: 'uppercase', letterSpacing: '1px', color: '#ef4444', margin: 0 }}>Critical Risk</p>
+          <p style={{ fontSize: '36px', fontWeight: 900, color: '#ef4444', lineHeight: 1.1, margin: '4px 0 2px' }}>{critical.length}</p>
+          <p style={{ fontSize: '11px', color: 'rgba(239,68,68,0.5)', margin: 0 }}>Score 75–100 · Immediate action</p>
         </div>
-        <div className={cardBase} style={{ background: '#2a1a00', border: '1px solid #7a4a00' }}>
-          <p className="text-xs uppercase tracking-wide text-orange-400">High Risk</p>
-          <p className="text-3xl font-black text-orange-400">{high.length}</p>
-          <p className="text-xs text-orange-800">Score 50–74 · Intervene soon</p>
+        <div className={cardBase} style={{ background: '#0d1e35', border: '1px solid rgba(232,121,43,0.3)' }}>
+          <p style={{ fontSize: '10px', textTransform: 'uppercase', letterSpacing: '1px', color: '#E8792B', margin: 0 }}>High Risk</p>
+          <p style={{ fontSize: '36px', fontWeight: 900, color: '#E8792B', lineHeight: 1.1, margin: '4px 0 2px' }}>{high.length}</p>
+          <p style={{ fontSize: '11px', color: 'rgba(232,121,43,0.5)', margin: 0 }}>Score 50–74 · Intervene soon</p>
         </div>
-        <div className={cardBase} style={{ background: '#0a2a18', border: '1px solid #1a5a30' }}>
-          <p className="text-xs uppercase tracking-wide text-green-400">Est. Monthly Cost</p>
-          <p className="text-3xl font-black text-green-400">${estimatedLoss.toLocaleString()}</p>
-          <p className="text-xs text-green-900">If all at-risk employees quit</p>
+        <div className={cardBase} style={{ background: '#0d1e35', border: '1px solid rgba(34,197,94,0.3)' }}>
+          <p style={{ fontSize: '10px', textTransform: 'uppercase', letterSpacing: '1px', color: '#22c55e', margin: 0 }}>Est. Replacement Cost</p>
+          <p style={{ fontSize: '28px', fontWeight: 900, color: '#22c55e', lineHeight: 1.1, margin: '4px 0 2px' }}>${estimatedLoss.toLocaleString()}</p>
+          <p style={{ fontSize: '11px', color: 'rgba(34,197,94,0.5)', margin: 0 }}>If all at-risk employees quit</p>
         </div>
       </div>
 
